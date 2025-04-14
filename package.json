@@ -1,0 +1,51 @@
+{
+  "name": "next-body-parser",
+  "version": "1.0.0",
+  "description": "Minimal JSON and FormData body parsers for server-side Next.js",
+  "main": "dist/index.js",
+  "module": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./json-body-parser": {
+      "import": "./dist/json-body-parser/json-body-parser.js"
+    },
+    "./form-data-body-parser": {
+      "import": "./dist/form-data-body-parser/form-data-body-parser.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "formdata",
+    "json",
+    "body parser",
+    "typescript",
+    "server",
+    "next.js"
+  ],
+  "author": "Yiming Liao",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiming-liao/next-body-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yiming-liao/next-body-parser/issues"
+  },
+  "homepage": "https://github.com/yiming-liao/next-body-parser#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.1"
+  }
+}

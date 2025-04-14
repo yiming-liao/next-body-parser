@@ -1,0 +1,35 @@
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+
+# TypeScript build output
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Next.js specific
+.next/
+out/
+
+# IDE & editor folders
+.vscode/
+.idea/
+
+# npm package-lock and yarn lock
+package-lock.json
+yarn.lock
+
+# MacOS specific
+Thumbs.db
